@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation: color-change 10s ease-out 1s 2;
+}
+
+@keyframes color-change {
+    0% {
+        background-color: rgb(255, 196, 0);
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        background-color: rgb(0, 191, 255);
+        border-radius: 25%;
+        top: 0;
+        left: 500px;
+    }
+    50%{
+        background-color: rgb(150, 57, 231);
+        border-radius: 50%;
+        left: 500px;
+        top: 500px;
+    }
+    75%{
+        background-color: rgb(222, 55, 94);
+        border-radius: 75%;
+        top: 500px;
+        left: 0;
+    }
+    100%{
+        background-color: rgb(95, 160, 87);
+        left: 0;
+        top: 0;
+    }
+}
