@@ -1,14 +1,15 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 div {
-    background-color: red;
     width: 200px;
     height: 200px;
     position: relative;
-    animation: color-change 10s ease-out 1s 2;
+    animation: color-change 10s ease-out 0s 5;
+    box-shadow: 0 0 90px cyan;
 }
 
 @keyframes color-change {
@@ -16,6 +17,8 @@ div {
         background-color: rgb(255, 196, 0);
         top: 0;
         left: 0;
+        border-radius: 500px;
+        
     }
 
     25% {
